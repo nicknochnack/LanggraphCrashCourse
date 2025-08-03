@@ -1,0 +1,24 @@
+[project]
+name = "30-07-2025-langgraph"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "colorama>=0.4.6",
+    "langchain>=0.3.27",
+    "langchain-ollama>=0.3.6",
+    "langgraph>=0.6.1",
+    "yfinance>=0.2.65",
+]
+
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
